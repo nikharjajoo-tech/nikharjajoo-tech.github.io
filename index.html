@@ -166,6 +166,11 @@ h1 em{font-style:normal;color:var(--blue)}
 .lab-card:hover{border-color:rgba(41,151,255,.35)}
 .lab-card h3{font-family:var(--display);font-size:22px;font-weight:600;margin:12px 0 12px}
 .lab-card p{color:var(--muted);font-size:15px}
+.lab-metrics{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:22px;padding-top:20px;border-top:1px solid var(--line)}
+.lab-metrics .val{font-family:var(--display);font-size:24px;font-weight:600;color:var(--text);letter-spacing:-.01em}
+.lab-metrics .lbl{font-size:12.5px;color:var(--dim);line-height:1.4;margin-top:2px}
+.lab-links{display:flex;flex-wrap:wrap;gap:10px}
+.lab-links .proj-link{margin-top:26px}
 .lab-tag{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--blue)}
 
 /* ---------- Skills ---------- */
@@ -232,7 +237,7 @@ footer{border-top:1px solid var(--line);padding:34px 0}
     <p class="hero-sub">7+ years leading cross-functional teams from PRD to production, across banking, environmental consulting, and M&amp;A due diligence.</p>
     <div class="hero-actions">
       <a class="btn btn-primary" href="#programs">View delivery record</a>
-      <a class="btn btn-ghost" href="Nikhar_Jajoo_Resume.pdf" download>Download resume ↓</a>
+      <a class="btn btn-ghost" href="Nikhar_Jajoo_AI_Product_Manager_Resume.pdf" download="Nikhar_Jajoo_AI_Product_Manager_Resume.pdf">Download resume ↓</a>
     </div>
 
     <div class="log reveal" role="table" aria-label="Program delivery log">
@@ -281,14 +286,14 @@ footer{border-top:1px solid var(--line);padding:34px 0}
       </div>
       <div class="about-copy reveal">
         <h2>The bridge between the model and the business.</h2>
-        <p>I spent nearly six years at Deloitte learning how large enterprises actually run: procurement at scale, 7,000+ contract migrations, and the politics of getting a room of stakeholders to say yes. Then I moved to the frontier, leading GenAI delivery at Grey Chain AI.</p>
-        <p>Today I ship RAG platforms, AI report builders, and due diligence engines for banks and global consulting firms. My job is translation: turning ambiguous AI ambition into PRDs, sprints, governance frameworks, and adoption numbers that leadership signs off on.</p>
+        <p>I spent nearly six years at Deloitte learning how large enterprises actually run: procurement at scale, 7,000+ contract migrations, and the politics of getting a room of stakeholders to say yes. Then I moved to the frontier as AI Product Manager at Grey Chain AI, and most recently joined Attri AI, where I prototyped a GenAI claims-denial triage agent that turns a 45–60 minute appeal review into a decision in about 60 seconds.</p>
+        <p>I've shipped RAG platforms, AI report builders, and due diligence engines for banks and global consulting firms, and I build my own AI products on the side. My job is translation: turning ambiguous AI ambition into PRDs, sprints, governance frameworks, and adoption numbers that leadership signs off on.</p>
         <p>The work I'm proudest of is the unglamorous kind: proposing <strong>CBAC over RBAC</strong> to a bank's leadership and getting it formally adopted, or finding the ingestion bottleneck at 100 MB and driving it to 300 MB before it killed production viability.</p>
         <p><strong>Relentless work ethic</strong> is not a line on my resume. It's answering the load-test question at 11 pm, rewriting the UAT runbook until consultants stop asking questions, and demoing to C-suite until the adoption curve bends.</p>
         <p class="edu-line"><strong>MBA, Bennett University</strong> (Operations &amp; Marketing) · <strong>B.Tech Mechanical Engineering, VIT</strong></p>
         <div class="tags">
           <span class="tag hot">RAG Systems</span><span class="tag hot">AI Governance (CBAC)</span><span class="tag hot">LLM Evaluation</span><span class="tag hot">Prompt Engineering</span>
-          <span class="tag">Agile / Scrum</span><span class="tag">PRD / FRD</span><span class="tag">Stakeholder Management</span><span class="tag">Jira &amp; Confluence</span><span class="tag">UAT &amp; Release</span>
+          <span class="tag hot">AI Agents</span><span class="tag">Product Discovery</span><span class="tag">Go-to-Market &amp; Adoption</span><span class="tag">Agile / Scrum</span><span class="tag">PRD / FRD</span><span class="tag">Stakeholder Management</span><span class="tag">Jira &amp; Confluence</span><span class="tag">UAT &amp; Release</span>
         </div>
       </div>
     </div>
@@ -298,30 +303,42 @@ footer{border-top:1px solid var(--line);padding:34px 0}
 <section id="experience">
   <div class="wrap">
     <p class="eyebrow">Experience</p>
-    <h2>Ten years, three chapters.</h2>
+    <h2>Ten years, four chapters.</h2>
     <div class="xp">
       <div class="xp-item now reveal">
         <div class="xp-top">
-          <span class="xp-role">Grey Chain AI <span>· Project Manager</span></span>
-          <span class="xp-date">JUN 2025 → PRESENT · GURUGRAM</span>
+          <span class="xp-role">Attri AI <span>· Technical Project Manager</span></span>
+          <span class="xp-date">JUL 2026 → SEP 2026 · AHMEDABAD</span>
+        </div>
+        <ul>
+          <li>Onboarded to lead delivery for a newly scoped enterprise AI transformation engagement; when the engagement did not materialise after kickoff, proactively redirected focus to internal product development.</li>
+          <li>Prototyped a GenAI claims-denial triage agent that parses the denial, retrieves the insurer's governing policy clause, and validates it against the medical record line by line: manual appeal review cut from 45–60 minutes to <b>~60 sec</b>, with an explicit appeal-or-write-off call.</li>
+        </ul>
+      </div>
+      <div class="xp-item reveal">
+        <div class="xp-top">
+          <span class="xp-role">Grey Chain AI <span>· AI Product Manager</span></span>
+          <span class="xp-date">JUN 2025 → JUN 2026 · GURUGRAM</span>
         </div>
         <ul>
           <li>Led end-to-end delivery of a GenAI knowledge platform for a Dubai bank: 12-member team, <b>~87%</b> faster retrieval, <b>10x</b> adoption in 30 days, zero governance incidents.</li>
           <li>Owned the CPD Report Builder lifecycle: <b>200+</b> Jira stories across 11 sprints, first-draft turnaround compressed from 2–4 months to 3–5 days (<b>~95%</b>).</li>
           <li>Co-owned the VDR due diligence platform roadmap: <b>80–85%</b> categorisation accuracy across 1,000+ documents per engagement, delivered to UAT in 3 months.</li>
           <li>Proposed CBAC as a governance layer over RBAC; secured formal banking leadership adoption across <b>~1,000</b> users.</li>
+          <li>Drove go-to-market and adoption through demos, training, and a 30+ template Prompt Library; daily queries per active user rose <b>85%</b> (12 → 22).</li>
         </ul>
       </div>
       <div class="xp-item reveal">
         <div class="xp-top">
-          <span class="xp-role">Deloitte USI <span>· Consultant</span></span>
+          <span class="xp-role">Deloitte USI <span>· Consultant | Project Lead</span></span>
           <span class="xp-date">JUN 2019 → MAR 2025 · GURUGRAM</span>
         </div>
         <ul>
           <li>Delivered automated contract migration across <b>7,000+</b> legacy contracts, eliminating <b>2,500+</b> person-hours at 100% compliance.</li>
           <li>Designed a GenAI + Advanced Excel automation for supplier onboarding: <b>80%</b> time reduction, 99% compliance.</li>
-          <li>Owned SAP Ariba Guided Buying delivery, accelerating requisition approvals by <b>30%</b>; built Power BI dashboards that cut leadership decision time by <b>50%</b>.</li>
-          <li>Awarded annually, 2020–2024, for accuracy and consistency in project execution.</li>
+          <li>Owned SAP Ariba Guided Buying delivery, accelerating requisition approvals by <b>30%</b>.</li>
+          <li>Built reporting systems with prompt engineering and Excel (VBA, Power Query) to track requisition costs and KPIs, saving <b>30+</b> hours a month for senior leadership.</li>
+          <li>Awarded annually by senior leadership, 2020–2024, for accuracy, efficiency, and consistency in project execution.</li>
         </ul>
       </div>
       <div class="xp-item reveal">
@@ -427,8 +444,34 @@ footer{border-top:1px solid var(--line);padding:34px 0}
   <div class="wrap">
     <p class="eyebrow">Lab</p>
     <h2>I don't just manage builders. I build.</h2>
-    <p class="lede">Hands-on work from the 100xEngineers Applied AI program, where I ship working products with modern no-code and LLM tooling.</p>
+    <p class="lede">Independent AI products I scope, evaluate, and ship myself, plus hands-on work from the 100xEngineers Applied AI program.</p>
     <div class="lab-grid">
+      <div class="lab-card reveal">
+        <span class="lab-tag">LB-05 · Independent build · Live</span>
+        <h3>ClaimMate: Voice AI Claims Agent</h3>
+        <p>A voice agent that turns a claimant's spoken call into a structured, policy-verified claim for adjusters. I set four launch criteria up front and tested against 50 claims to prove voice AI can safely automate claim intake. It met all four.</p>
+        <div class="lab-metrics">
+          <div><div class="val">100%</div><div class="lbl">Injury and danger cases flagged, zero false alarms</div></div>
+          <div><div class="val">96%</div><div class="lbl">Claims routed correctly</div></div>
+          <div><div class="val">0</div><div class="lbl">Hallucinated facts</div></div>
+          <div><div class="val">50</div><div class="lbl">Test claims against 4 launch criteria</div></div>
+        </div>
+        <div class="stack"><span>Voice AI</span><span>LLMs</span><span>Policy Verification</span><span>Safety Evals</span></div>
+        <div class="lab-links"><a class="proj-link" href="https://claimvoice-v2rh.onrender.com" target="_blank" rel="noopener">Live app ↗</a><a class="proj-link" href="https://github.com/nikharjajoo-tech/claimmate" target="_blank" rel="noopener">GitHub ↗</a></div>
+      </div>
+      <div class="lab-card reveal">
+        <span class="lab-tag">LB-06 · Independent build · Live</span>
+        <h3>AI Support Ticket Copilot</h3>
+        <p>An LLM copilot that classifies B2B SaaS support tickets, assigns priority from business policy, drafts grounded replies, and escalates to humans by rule. Validated with a hand-labelled golden set and a blind grader, iterating the priority policy across 3 models.</p>
+        <div class="lab-metrics">
+          <div><div class="val">100%</div><div class="lbl">Urgent-ticket recall</div></div>
+          <div><div class="val">1.8s</div><div class="lbl">Median latency</div></div>
+          <div><div class="val">~$1.19</div><div class="lbl">Per 1,000 tickets</div></div>
+          <div><div class="val">3</div><div class="lbl">Models evaluated</div></div>
+        </div>
+        <div class="stack"><span>Python</span><span>Streamlit</span><span>Gemini</span><span>LLM Eval Harness</span></div>
+        <div class="lab-links"><a class="proj-link" href="https://support-ticket-copilot-5ym8ulkda6qgrbzkyhxeoj.streamlit.app/" target="_blank" rel="noopener">Live app ↗</a><a class="proj-link" href="https://github.com/nikharjajoo-tech/support-ticket-copilot" target="_blank" rel="noopener">GitHub ↗</a></div>
+      </div>
       <div class="lab-card reveal">
         <span class="lab-tag">LB-04 · Hackathon build</span>
         <h3>TaskShift</h3>
@@ -453,7 +496,9 @@ footer{border-top:1px solid var(--line);padding:34px 0}
       <div class="skill-col reveal">
         <h4>Product Management</h4>
         <ul>
-          <li>PRDs &amp; AI feature specification</li>
+          <li>Product discovery &amp; AI feature specification</li>
+          <li>PRDs, user stories &amp; acceptance criteria</li>
+          <li>Go-to-market &amp; adoption</li>
           <li>Model evaluation frameworks</li>
           <li>Feature prioritization (value-risk-readiness)</li>
           <li>Stakeholder alignment &amp; C-suite demos</li>
@@ -468,24 +513,29 @@ footer{border-top:1px solid var(--line);padding:34px 0}
           <li>Cross-functional team leadership (6–15)</li>
           <li>UAT strategy &amp; release management</li>
           <li>Risk-forward status reporting</li>
+          <li>Data: SQL, Power BI, Excel (VBA, Power Query)</li>
         </ul>
       </div>
       <div class="skill-col reveal">
-        <h4>GenAI Architecture</h4>
+        <h4>Generative AI</h4>
         <ul>
           <li>RAG systems &amp; vector databases</li>
           <li>AI governance: CBAC, RBAC</li>
           <li>Hallucination detection &amp; guardrails</li>
           <li>Prompt engineering &amp; benchmarking</li>
           <li>LLM selection &amp; evaluation</li>
+          <li>AI agents &amp; LangGraph</li>
+          <li>OpenAI GPT, Claude, Gemini Live</li>
         </ul>
       </div>
     </div>
     <div class="certs">
-      <div class="cert reveal"><i></i><div><b>Generative AI Certification</b><span>Nvidia</span></div></div>
-      <div class="cert reveal"><i></i><div><b>Prompt Engineering</b><span>DeepLearning.AI</span></div></div>
-      <div class="cert reveal"><i></i><div><b>Applied AI for Product Managers</b><span>100xEngineers · in progress</span></div></div>
-      <div class="cert reveal"><i></i><div><b>Advanced Excel</b><span>Tutedude</span></div></div>
+      <div class="cert reveal"><i></i><div><b>Generative AI Certification</b><span>Nvidia · 2025</span></div></div>
+      <div class="cert reveal"><i></i><div><b>Prompt Engineering</b><span>DeepLearning.AI · 2025</span></div></div>
+      <div class="cert reveal"><i></i><div><b>Applied AI for Product Managers</b><span>100xEngineers · in progress, 2026</span></div></div>
+      <div class="cert reveal"><i></i><div><b>Advanced Excel</b><span>Tutedude · 2023</span></div></div>
+      <div class="cert reveal"><i style="background:var(--green)"></i><div><b>Deloitte USI excellence award</b><span>5 years running, 2020–2024</span></div></div>
+      <div class="cert reveal"><i style="background:var(--green)"></i><div><b>Formula Student (FSAE) lead</b><span>Directed a 33-member team; cut chassis weight 26% (38 kg → 28 kg) with regression analysis</span></div></div>
     </div>
   </div>
 </section>
@@ -500,7 +550,7 @@ footer{border-top:1px solid var(--line);padding:34px 0}
         <a class="btn btn-primary" href="mailto:nikharjajoo@gmail.com">nikharjajoo@gmail.com</a>
         <a class="btn btn-ghost" href="https://linkedin.com/in/nikhar-jajoo" target="_blank" rel="noopener">LinkedIn ↗</a>
         <a class="btn btn-ghost" href="tel:+918320170508">+91 83201 70508</a>
-        <a class="btn btn-ghost" href="Nikhar_Jajoo_Resume.pdf" download>Resume ↓</a>
+        <a class="btn btn-ghost" href="Nikhar_Jajoo_AI_Product_Manager_Resume.pdf" download="Nikhar_Jajoo_AI_Product_Manager_Resume.pdf">Resume ↓</a>
       </div>
     </div>
   </div>
